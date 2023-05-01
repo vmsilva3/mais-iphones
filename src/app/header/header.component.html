@@ -1,0 +1,31 @@
+<header class="main-header">
+    <!--<h1 class="main-header__title">
+        <span class="main-header__title--blue">Mais</span><span class="main-header__title--purple">iPhones</span>
+    </h1>-->
+    <img 
+        class="main-logo" 
+        src="./assets/mais-iphones.png"
+        routerLink="produtos"
+    >
+    <div class="container-menu">
+        <nav class="main-header__menu">
+            <ul>
+                <li>
+                    <a routerLink="produtos">Produtos</a>
+                </li>
+                <li>
+                    <a routerLink="carrinho">
+                        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                        Carrinho
+                        <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+                    </a>
+                </li>
+                <li><a routerLink="contato">Contato</a></li>
+                <li><a href="https://www.facebook.com/maisiphoness" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/maisiphones_/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://web.whatsapp.com/send?phone=5519997497933" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+</header>
